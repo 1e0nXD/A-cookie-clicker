@@ -1,10 +1,18 @@
 [gd_scene format=3 uid="uid://m1l7dogc10l4"]
 
+<<<<<<< HEAD
+[ext_resource type="Script" uid="uid://d058hwdevghsq" path="res://Scripts/menu.gd" id="1_bdvtk"]
+[ext_resource type="Texture2D" uid="uid://nugifgqdyoof" path="res://Assets/Audio/music_button.png" id="2_llk0d"]
+[ext_resource type="AudioStream" uid="uid://dpbimfntok6a6" path="res://Assets/Audio/menu_music.mp3" id="3_nqrt4"]
+[ext_resource type="FontFile" uid="uid://dtacyloo7iuf4" path="res://Assets/Stacked pixel.ttf" id="4_xsngb"]
+[ext_resource type="AudioStream" uid="uid://l22ukmjs7tn0" path="res://Assets/Audio/click_sound.mp3" id="5_qi3mh"]
+=======
 [ext_resource type="Script" uid="uid://d058hwdevghsq" path="res://Cookie CLicker/Scripts/menu.gd" id="1_bdvtk"]
 [ext_resource type="Texture2D" uid="uid://nugifgqdyoof" path="res://Cookie CLicker/Assets/Audio/music_button.png" id="2_llk0d"]
 [ext_resource type="AudioStream" uid="uid://dpbimfntok6a6" path="res://Cookie CLicker/Assets/Audio/menu_music.mp3" id="3_nqrt4"]
 [ext_resource type="FontFile" uid="uid://dtacyloo7iuf4" path="res://Cookie CLicker/Assets/Stacked pixel.ttf" id="4_xsngb"]
 [ext_resource type="AudioStream" uid="uid://l22ukmjs7tn0" path="res://Cookie CLicker/Assets/Audio/click_sound.mp3" id="5_qi3mh"]
+>>>>>>> origin/master
 
 [node name="Area2D" type="Area2D" unique_id=2105906008]
 position = Vector2(2, -2)
@@ -104,7 +112,10 @@ metadata/_edit_lock_ = true
 [node name="ColorRect" type="ColorRect" parent="." unique_id=38063842]
 process_priority = 1
 process_physics_priority = 1
+<<<<<<< HEAD
+=======
 visible = false
+>>>>>>> origin/master
 z_index = 1
 offset_left = 35.0
 offset_top = 252.0

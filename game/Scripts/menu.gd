@@ -5,6 +5,10 @@ func _ready():
 	$music_button/musicbuttonpng.set_self_modulate(Color(0.5, 0.5, 0.5, 1))
 	$"../ColorRect".set_visible(false)
 	
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
 func _on_button_pressed():
 	print("button pressed")
 	#plays a sound effect
@@ -56,4 +60,8 @@ func _on_start_button_pressed():
 
 
 func _on_timer_timeout() -> void:
+<<<<<<< HEAD
+	get_tree().change_scene_to_file("res://Scenes/game.tscn")
+=======
 	get_tree().change_scene_to_file("res://Cookie CLicker/Scenes/game.tscn")
+>>>>>>> origin/master
