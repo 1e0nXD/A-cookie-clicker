@@ -1,0 +1,512 @@
+[gd_scene format=3 uid="uid://cci210xvh73hk"]
+
+<<<<<<< HEAD
+[ext_resource type="Script" uid="uid://clwixq02wjmgj" path="res://Scripts/game.gd" id="1_i6g32"]
+[ext_resource type="FontFile" uid="uid://dtacyloo7iuf4" path="res://Assets/Stacked pixel.ttf" id="2_7w5ml"]
+[ext_resource type="Texture2D" uid="uid://b7tdnl31ced1n" path="res://Assets/Images/grandma.png" id="3_iw7bn"]
+[ext_resource type="Texture2D" uid="uid://h3ypwglsnw8" path="res://Assets/Images/cursor.png" id="4_i6g32"]
+[ext_resource type="AudioStream" uid="uid://l22ukmjs7tn0" path="res://Assets/Audio/click_sound.mp3" id="5_ofivx"]
+[ext_resource type="Texture2D" uid="uid://cwtfdi5yirrdg" path="res://Assets/Images/cookie.png" id="6_0sonx"]
+=======
+<<<<<<< HEAD
+[ext_resource type="Script" uid="uid://glnao7g2j0dy" path="res://Scripts/game.gd" id="1_ys4in"]
+[ext_resource type="FontFile" uid="uid://dtacyloo7iuf4" path="res://Assets/Stacked pixel.ttf" id="2_7w5ml"]
+[ext_resource type="Texture2D" uid="uid://b7tdnl31ced1n" path="res://Assets/Images/grandma.png" id="3_iw7bn"]
+[ext_resource type="Texture2D" uid="uid://t14u5nvv0mr8" path="res://Assets/Images/cursor .png" id="4_1l0tm"]
+[ext_resource type="Texture2D" uid="uid://boes1hsxeq7o1" path="res://Assets/Images/shop.png" id="4_5h72e"]
+[ext_resource type="AudioStream" uid="uid://l22ukmjs7tn0" path="res://Assets/Audio/click_sound.mp3" id="5_ofivx"]
+[ext_resource type="Texture2D" uid="uid://cwtfdi5yirrdg" path="res://Assets/Images/cookie.png" id="6_0sonx"]
+=======
+[ext_resource type="Script" uid="uid://glnao7g2j0dy" path="res://Cookie CLicker/Scripts/shop_stuff.gd" id="1_ys4in"]
+[ext_resource type="FontFile" uid="uid://dtacyloo7iuf4" path="res://Cookie CLicker/Assets/Stacked pixel.ttf" id="2_7w5ml"]
+[ext_resource type="Texture2D" uid="uid://b7tdnl31ced1n" path="res://Cookie CLicker/Assets/Images/grandma.png" id="3_iw7bn"]
+[ext_resource type="Texture2D" uid="uid://boes1hsxeq7o1" path="res://Cookie CLicker/Assets/Images/shop.png" id="4_5h72e"]
+[ext_resource type="AudioStream" uid="uid://l22ukmjs7tn0" path="res://Cookie CLicker/Assets/Audio/click_sound.mp3" id="5_ofivx"]
+[ext_resource type="Texture2D" uid="uid://cwtfdi5yirrdg" path="res://Cookie CLicker/Assets/Images/cookie.png" id="6_0sonx"]
+
+[sub_resource type="GDScript" id="GDScript_i6g32"]
+script/source = "extends Node
+
+
+
+func _on_texture_button_pressed() -> void:
+	print(\"hi\")
+
+func _on_texture_button_mouse_entered() -> void:
+	$TextureButton/Panel2.set_modulate(Color(0.482, 0.482, 0.482, 1.0))
+func _on_texture_button_mouse_exited() -> void:
+	$TextureButton/Panel2.set_modulate(Color(1.0, 1.0, 1.0, 1.0))
+"
+>>>>>>> origin/master
+>>>>>>> origin/master
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_py36t"]
+radius = 205.06097
+
+[node name="Game" type="Node" unique_id=1143498066]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=897425856]
+<<<<<<< HEAD
+script = ExtResource("1_i6g32")
+
+[node name="grandma cooking time" type="Timer" parent="." unique_id=1603913770]
+one_shot = true
+
+[node name="Shop stuff" type="Node" parent="." unique_id=249033612]
+=======
+script = ExtResource("1_ys4in")
+
+[node name="grandma cooking time" type="Timer" parent="." unique_id=1603913770]
+<<<<<<< HEAD
+wait_time = 20.0
+
+[node name="Shop stuff" type="Control" parent="." unique_id=1118023895]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -528.0
+offset_top = -215.0
+offset_right = -488.0
+offset_bottom = -175.0
+
+[node name="TextureButton" type="TextureButton" parent="Shop stuff" unique_id=1586840900]
+layout_mode = 1
+anchors_preset = -1
+offset_left = -33.0
+offset_top = -23.0
+offset_right = 233.0
+offset_bottom = 103.0
+=======
+one_shot = true
+
+[node name="Shop stuff" type="Node" parent="." unique_id=249033612]
+script = SubResource("GDScript_i6g32")
+>>>>>>> origin/master
+
+[node name="TextureButton" type="TextureButton" parent="Shop stuff" unique_id=1586840900]
+anchors_preset = -1
+offset_left = -561.0
+offset_top = -238.0
+offset_right = -295.0
+offset_bottom = -112.0
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
+button_mask = 3
+
+[node name="Panel2" type="Panel" parent="Shop stuff/TextureButton" unique_id=957652009]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.14
+anchor_top = 0.09
+anchor_right = 1.0
+anchor_bottom = 0.93200004
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+offset_left = -4.2400093
+offset_top = 11.66
+offset_right = -9.295959
+offset_bottom = 15.635941
+=======
+>>>>>>> origin/master
+offset_left = -1.9799995
+offset_top = 10.0199995
+offset_right = -7.0359497
+offset_bottom = 13.995941
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Shop stuff/TextureButton/Panel2" unique_id=1027259621]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.19100001
+offset_left = 4.0
+offset_top = 14.0
+offset_right = 168.047
+offset_bottom = 97.0
+mouse_filter = 2
+color = Color(0.42521307, 0.4651723, 0.73463565, 1)
+<<<<<<< HEAD
+metadata/_edit_lock_ = true
+
+=======
+<<<<<<< HEAD
+=======
+metadata/_edit_lock_ = true
+
+[node name="descripton_label" type="Label" parent="Shop stuff/TextureButton/Panel2/ColorRect" unique_id=1744859744]
+light_mask = 0
+layout_mode = 0
+offset_left = 9.0
+offset_top = 45.0
+offset_right = 313.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.83352125, 0.8578289, 0.85830414, 1)
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 18
+text = "makes cookies 
+for you  it costs 50
+"
+metadata/_edit_lock_ = true
+>>>>>>> origin/master
+
+>>>>>>> origin/master
+[node name="TextureRect" type="TextureRect" parent="Shop stuff/TextureButton/Panel2/ColorRect" unique_id=146429707]
+z_index = 1
+layout_mode = 0
+offset_left = 135.0
+offset_top = -25.0
+offset_right = 221.0
+offset_bottom = 59.0
+mouse_filter = 2
+texture = ExtResource("3_iw7bn")
+metadata/_edit_lock_ = true
+
+[node name="shop_label" type="Label" parent="Shop stuff/TextureButton/Panel2" unique_id=1130445178]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 24.0
+offset_right = 192.0
+offset_bottom = 103.0
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 37
+text = "grandma
+"
+metadata/_edit_lock_ = true
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
+[node name="descripton_label" type="Label" parent="Shop stuff/TextureButton/Panel2" unique_id=1744859744]
+light_mask = 0
+layout_mode = 0
+offset_left = 13.0
+offset_top = 59.0
+offset_right = 317.0
+offset_bottom = 138.0
+theme_override_colors/font_color = Color(0.83352125, 0.8578289, 0.85830414, 1)
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 18
+<<<<<<< HEAD
+text = "It costs 100
+"
+metadata/_edit_lock_ = true
+
+[node name="cursor_upgrade" type="Panel" parent="Shop stuff/TextureButton" unique_id=1487042481]
+=======
+text = "makes cookies 
+for you  it costs 50
+"
+metadata/_edit_lock_ = true
+
+=======
+>>>>>>> origin/master
+[node name="Panel3" type="Panel" parent="Shop stuff/TextureButton" unique_id=1487042481]
+>>>>>>> origin/master
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.14
+anchor_top = 0.09
+anchor_right = 1.0
+anchor_bottom = 0.93200004
+<<<<<<< HEAD
+offset_left = -1.2400093
+offset_top = -115.34
+offset_right = -6.2959595
+offset_bottom = -111.36406
+=======
+offset_left = -4.2400093
+offset_top = 133.66
+offset_right = -9.295959
+offset_bottom = 137.63594
+>>>>>>> origin/master
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+<<<<<<< HEAD
+[node name="ColorRect" type="ColorRect" parent="Shop stuff/TextureButton/cursor_upgrade" unique_id=566387249]
+=======
+[node name="ColorRect" type="ColorRect" parent="Shop stuff/TextureButton/Panel3" unique_id=566387249]
+>>>>>>> origin/master
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.19100001
+offset_left = 4.0
+offset_top = 14.0
+offset_right = 168.047
+offset_bottom = 97.0
+mouse_filter = 2
+color = Color(0.42521307, 0.4651723, 0.73463565, 1)
+metadata/_edit_lock_ = true
+
+<<<<<<< HEAD
+[node name="descripton_label" type="Label" parent="Shop stuff/TextureButton/cursor_upgrade/ColorRect" unique_id=1247833725]
+=======
+<<<<<<< HEAD
+=======
+[node name="descripton_label" type="Label" parent="Shop stuff/TextureButton/Panel3/ColorRect" unique_id=1247833725]
+>>>>>>> origin/master
+light_mask = 0
+layout_mode = 0
+offset_left = 9.0
+offset_top = 45.0
+offset_right = 313.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.83352125, 0.8578289, 0.85830414, 1)
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 18
+text = "makes cookies 
+for you  it costs 50
+"
+metadata/_edit_lock_ = true
+
+<<<<<<< HEAD
+[node name="TextureRect" type="TextureRect" parent="Shop stuff/TextureButton/cursor_upgrade/ColorRect" unique_id=1829859775]
+z_index = 1
+layout_mode = 0
+offset_left = 150.0
+offset_top = -9.000001
+offset_right = 236.0
+offset_bottom = 75.0
+scale = Vector2(0.8, 0.8)
+mouse_filter = 2
+texture = ExtResource("4_i6g32")
+
+[node name="shop_label" type="Label" parent="Shop stuff/TextureButton/cursor_upgrade" unique_id=1588585155]
+=======
+[node name="TextureRect" type="TextureRect" parent="Shop stuff/TextureButton/Panel3/ColorRect" unique_id=1829859775]
+z_index = 1
+layout_mode = 0
+offset_left = 135.0
+offset_top = -25.0
+offset_right = 221.0
+offset_bottom = 59.0
+mouse_filter = 2
+texture = ExtResource("3_iw7bn")
+metadata/_edit_lock_ = true
+
+>>>>>>> origin/master
+[node name="shop_label" type="Label" parent="Shop stuff/TextureButton/Panel3" unique_id=1588585155]
+>>>>>>> origin/master
+layout_mode = 0
+offset_left = 9.0
+offset_top = 24.0
+offset_right = 192.0
+offset_bottom = 103.0
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 37
+<<<<<<< HEAD
+text = "cursor
+"
+metadata/_edit_lock_ = true
+
+=======
+<<<<<<< HEAD
+text = "Cursor
+"
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Shop stuff/TextureButton/Panel3" unique_id=1829859775]
+z_index = 1
+layout_mode = 0
+offset_left = 143.0
+offset_top = 3.0
+offset_right = 229.0
+offset_bottom = 87.0
+scale = Vector2(0.8, 0.8)
+mouse_filter = 2
+texture = ExtResource("4_1l0tm")
+metadata/_edit_lock_ = true
+
+[node name="descripton_label" type="Label" parent="Shop stuff/TextureButton/Panel3" unique_id=1247833725]
+light_mask = 0
+layout_mode = 0
+offset_left = 13.0
+offset_top = 59.0
+offset_right = 317.0
+offset_bottom = 138.0
+theme_override_colors/font_color = Color(0.83352125, 0.8578289, 0.85830414, 1)
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 18
+text = "get more cookies
+per click "
+metadata/_edit_lock_ = true
+
+[node name="Panel" type="Panel" parent="Shop stuff/TextureButton" unique_id=1350972810]
+layout_mode = 0
+offset_left = 39.0
+offset_top = -106.0
+offset_right = 254.0
+offset_bottom = 3.0
+
+[node name="ColorRect" type="ColorRect" parent="Shop stuff/TextureButton/Panel" unique_id=1475562254]
+=======
+text = "grandma
+"
+metadata/_edit_lock_ = true
+
+[node name="Panel" type="Panel" parent="Shop stuff" unique_id=1350972810]
+offset_left = -522.0
+offset_top = -344.0
+offset_right = -307.0
+offset_bottom = -235.0
+
+[node name="ColorRect" type="ColorRect" parent="Shop stuff/Panel" unique_id=1475562254]
+>>>>>>> origin/master
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.15
+anchor_top = -0.303
+anchor_right = 1.0450001
+anchor_bottom = 0.88000005
+offset_left = 37.0
+offset_top = 54.906
+offset_right = -13.900024
+offset_bottom = 6.079994
+color = Color(0.46488637, 0.6972337, 0.4811077, 1)
+
+<<<<<<< HEAD
+[node name="shop_label" type="Label" parent="Shop stuff/TextureButton/Panel" unique_id=1044452192]
+=======
+[node name="shop_label" type="Label" parent="Shop stuff/Panel" unique_id=1044452192]
+>>>>>>> origin/master
+layout_mode = 0
+offset_left = 18.0
+offset_top = 27.0
+offset_right = 201.0
+offset_bottom = 106.0
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 46
+text = "SHOP 
+"
+metadata/_edit_lock_ = true
+
+<<<<<<< HEAD
+[node name="descripton_label" type="Label" parent="Shop stuff/TextureButton/Panel" unique_id=1028143195]
+=======
+[node name="descripton_label" type="Label" parent="Shop stuff/Panel" unique_id=1028143195]
+>>>>>>> origin/master
+layout_mode = 0
+offset_left = 10.0
+offset_top = 62.0
+offset_right = 314.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0.83352125, 0.8578289, 0.85830414, 1)
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 18
+text = "area below
+"
+metadata/_edit_lock_ = true
+
+<<<<<<< HEAD
+[node name="Shop" type="Sprite2D" parent="Shop stuff/TextureButton/Panel" unique_id=1103333257]
+=======
+[node name="Shop" type="Sprite2D" parent="Shop stuff/Panel" unique_id=1103333257]
+>>>>>>> origin/master
+position = Vector2(160, 45)
+scale = Vector2(3, 3)
+texture = ExtResource("4_5h72e")
+metadata/_edit_lock_ = true
+
+>>>>>>> origin/master
+[node name="Area2D" type="Area2D" parent="." unique_id=1790593449]
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="Area2D" unique_id=98771300]
+stream = ExtResource("5_ofivx")
+
+[node name="Cookie" type="Sprite2D" parent="Area2D" unique_id=1123885029]
+<<<<<<< HEAD
+position = Vector2(-1.9073486e-06, -0.9999962)
+=======
+<<<<<<< HEAD
+position = Vector2(-4, 1)
+=======
+position = Vector2(-1.9073486e-06, -0.9999962)
+>>>>>>> origin/master
+>>>>>>> origin/master
+scale = Vector2(12, 12)
+texture = ExtResource("6_0sonx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1265665686]
+<<<<<<< HEAD
+position = Vector2(7.0000005, -35)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_py36t")
+=======
+<<<<<<< HEAD
+position = Vector2(14.000001, -31)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_py36t")
+metadata/_edit_lock_ = true
+=======
+position = Vector2(7.0000005, -35)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_py36t")
+>>>>>>> origin/master
+>>>>>>> origin/master
+
+[node name="Camera2D" type="Camera2D" parent="Area2D" unique_id=2105903174]
+position = Vector2(36, -35)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Label" type="Label" parent="." unique_id=785171397]
+offset_left = -237.0
+offset_top = -330.0
+offset_right = 249.0
+offset_bottom = -263.0
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("2_7w5ml")
+theme_override_font_sizes/font_size = 70
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+paragraph_separator = "/"
+
+<<<<<<< HEAD
+[connection signal="timeout" from="grandma cooking time" to="Node2D" method="_on_timer_timeout"]
+=======
+<<<<<<< HEAD
+[node name="ColorRect" type="ColorRect" parent="Label" unique_id=289247875]
+z_index = -1
+layout_mode = 0
+offset_left = -301.0
+offset_right = 838.0
+offset_bottom = 61.0
+mouse_filter = 2
+color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Label/ColorRect" unique_id=1093801548]
+z_index = -3
+layout_mode = 0
+offset_left = -57.0
+offset_top = -91.0
+offset_right = 1165.0
+offset_bottom = 681.0
+mouse_filter = 2
+color = Color(0.45840502, 0.45840508, 0.45840502, 1)
+
+[connection signal="timeout" from="grandma cooking time" to="Node2D" method="_on_grandma_cooking_time_timeout"]
+=======
+[connection signal="timeout" from="grandma cooking time" to="Node2D" method="_on_timer_timeout"]
+>>>>>>> origin/master
+>>>>>>> origin/master
+[connection signal="mouse_entered" from="Shop stuff/TextureButton" to="Node2D" method="_on_texture_button_mouse_entered"]
+[connection signal="mouse_exited" from="Shop stuff/TextureButton" to="Node2D" method="_on_texture_button_mouse_exited"]
+[connection signal="pressed" from="Shop stuff/TextureButton" to="Node2D" method="_on_texture_button_pressed"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="input_event" from="Area2D" to="Node2D" method="_on_area_2d_input_event"]
+[connection signal="mouse_shape_entered" from="Area2D" to="." method="_on_area_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_entered" from="Area2D" to="Node2D" method="_on_area_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="Area2D" to="Node2D" method="_on_area_2d_mouse_shape_exited"]
